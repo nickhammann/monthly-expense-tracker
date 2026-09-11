@@ -4,10 +4,10 @@
   align-items: center;
   height: 3.5rem;
   padding: 0 1rem;
-  background: var(--app-chrome-surface);
+  background: var(--app-sidebar-background-color);
   color: var(--p-text-color);
   font-family: 'Inter Tight', sans-serif;
-  border-bottom: 2px solid var(--p-content-border-color);
+  border-bottom: 1px solid var(--p-content-border-color);
 }
 
 .topnav-brand-name {

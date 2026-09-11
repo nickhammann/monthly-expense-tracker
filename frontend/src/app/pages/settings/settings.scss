@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  padding: 4rem;
+  background-color: var(--app-chrome-surface);
+  height: 100%;
+  font-family: "Source Sans 3", system-ui, sans-serif
+}
+
+.general-settings-card {
+  max-width:100%;
+  margin-bottom: 2rem;
+}

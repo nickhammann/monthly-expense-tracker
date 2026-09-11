@@ -1,1 +1,10 @@
-<p>settings works!</p>
+<p-card class="general-settings-card" header="Profil">
+  <app-users></app-users>
+</p-card>
+
+<p-card class="general-settings-card" header="Default currency" subheader="The default currency is used for all expenses.">
+  <p-select
+    [options]="currencies"
+    [(ngModel)]="selectedCurrency"
+  ></p-select>
+</p-card>
