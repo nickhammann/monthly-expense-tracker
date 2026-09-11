@@ -1,0 +1,9 @@
+<p-menu [model]="items()" styleClass="sidebar-menu">
+
+  <ng-template #end>
+    <div class="sidebar-user">
+      <p-avatar icon="pi pi-user" shape="circle" />
+      <span class="sidebar-user-name">{{ t().account.label }}</span>
+    </div>
+  </ng-template>
+</p-menu>

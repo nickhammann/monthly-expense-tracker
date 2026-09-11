@@ -1,0 +1,113 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 16rem;
+  max-width: 30%;
+  padding: 1.25rem 0.75rem 1rem;
+  background: var(--app-chrome-surface);
+  color: var(--p-text-color);
+  font-family: 'Inter Tight', sans-serif;
+}
+
+p-menu {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+:host ::ng-deep .sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+:host ::ng-deep .p-menu-list {
+  min-height: 0;
+  overflow-y: auto;
+}
+
+:host ::ng-deep .p-menu-item + .p-menu-item {
+  margin-top: 0.125rem;
+}
+
+:host ::ng-deep .p-menu-item-link {
+  gap: 0.7rem;
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.5rem;
+  color: var(--p-text-muted-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+:host ::ng-deep .p-menu-item-icon {
+  width: 1.125rem;
+  font-size: 1rem;
+  color: inherit;
+  text-align: center;
+}
+
+:host ::ng-deep .p-menu-item-link:hover {
+  background: var(--app-chrome-hover-background);
+  color: var(--p-text-hover-color);
+}
+
+:host ::ng-deep .p-menu-item-link.p-menu-item-link-active,
+:host ::ng-deep .p-menu-item-link.p-menu-item-link-active:hover {
+  background: var(--app-nav-active-background);
+  color: var(--app-nav-active-color);
+  font-weight: 600;
+}
+
+:host ::ng-deep .p-menu-end {
+  margin-top: auto;
+}
+
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 0.75rem;
+  padding: 0.875rem 0.625rem 0.25rem;
+  border-top: 1px solid var(--p-content-border-color);
+}
+
+.sidebar-user-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.3;
+}
+
+.sidebar-user-name {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--p-text-color);
+}
+
+.sidebar-user-meta {
+  font-size: 0.6875rem;
+  color: var(--p-text-muted-color);
+}
+
+:host ::ng-deep .sidebar-user .p-avatar {
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--app-chrome-avatar-background);
+  color: var(--p-text-muted-color);
+}
+
+:host ::ng-deep .sidebar-user .p-avatar .p-avatar-icon {
+  font-size: 0.8125rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :host ::ng-deep .p-menu-item-link {
+    transition: none;
+  }
+}
